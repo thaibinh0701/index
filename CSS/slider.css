@@ -1,0 +1,45 @@
+@charset "utf-8";
+.slider {
+  position: relative;
+  width: 1024;
+  height: 500px;
+}
+.slide-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+input,
+label {
+  display: none;
+}
+input:checked + .slide-item {
+  visibility: visible;
+  opacity: 1;
+}
+input#slide-1:checked ~ label.slide-1,
+input#slide-2:checked ~ label.slide-2,
+input#slide-3:checked ~ label.slide-3 {
+  display: block;
+}
+label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width:30px;
+height:34px;		
+  cursor: pointer;
+  padding: 15px;
+  background: #383838;
+opacity: 20%;	
+background-size: cover;	
+line-height: 43px;
+text-align: center;	
+}
+label.next {
+  right: 0px;
+  left: auto;
+}

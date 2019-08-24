@@ -1,0 +1,48 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+
+ margin: 0;
+align: center;
+margin: 0;
+padding-left: 450px;	
+}
+}
+section{
+width: 100%;
+height: 300vh;
+background: url(../images/cd-top-arrow.jpg) no-repeat;
+background-size: cover;
+}
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #3b6a36;
+  bottom: 40px;
+  right: 50px;
+transition-duration: 1s;
+ transition-timing-function: ease-in-out;	
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+}
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;  
+  animation-name: btnExit;
+}
